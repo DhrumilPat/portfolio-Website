@@ -261,7 +261,7 @@
     text-transform: uppercase; letter-spacing: 0.1em;
   }
 
-  /* TIMELINE (Education + Experience) */
+  /* TIMELINE */
   .timeline { display: grid; gap: 1.25rem; }
   .timeline-item {
     background: var(--bg-card);
@@ -652,7 +652,6 @@
       View My Work
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
     </a>
-    <!-- Resume PDF download -->
     <a href="Dhrumil_Patel_Resume.pdf" class="btn btn-ghost" download>
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
       Download Resume
@@ -750,26 +749,29 @@
   </div>
 
   <div class="timeline">
-    <div class="timeline-item reveal">
-      <div class="timeline-date">Aug 2025 — Oct 2025</div>
-      <div class="timeline-content">
-        <h3>Monmouth Medical Center</h3>
-        <div class="role">IT Intern</div>
-        <ul>
-          <li>Supported the development and testing of a clinic application on the Epic platform, contributing to system functionality and user experience</li>
-          <li>Assisted in implementing anti-malware security measures to safeguard patient data and ensure compliance with healthcare IT standards</li>
-        </ul>
-      </div>
-    </div>
 
+    <!-- ✅ UPDATED: Patient Access Representative -->
     <div class="timeline-item reveal">
       <div class="timeline-date">Jul 2023 — Present</div>
       <div class="timeline-content">
         <h3>Monmouth Medical Center</h3>
         <div class="role">Patient Access Representative</div>
         <ul>
-          <li>Maintain accuracy and security in updating confidential health records under HIPAA standards while optimizing financial workflows through precise co-pay and balance collections</li>
-          <li>Troubleshoot system user issues and collaborate with IT to resolve technical errors, bridging clinical operations and technology support</li>
+          <li>Collected and verified patient demographics, insurance information, and consent forms during check-in at the front desk and back office, ensuring data accuracy and completeness across all patient encounters.</li>
+          <li>Processed co-pay and balance collections while strictly adhering to HIPAA standards, safeguarding patient confidentiality by preventing unauthorized disclosure of protected health information.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ✅ UPDATED: IT Internship -->
+    <div class="timeline-item reveal">
+      <div class="timeline-date">Aug 2025 — Oct 2025</div>
+      <div class="timeline-content">
+        <h3>Monmouth Medical Center</h3>
+        <div class="role">IT Intern</div>
+        <ul>
+          <li>Shadowed senior IT staff and assisted in resolving end-user help desk tickets across clinical and administrative departments, gaining hands-on exposure to enterprise healthcare IT operations.</li>
+          <li>Attended team meetings and project discussions, observing active IT initiatives on the Epic platform and independently exploring anti-malware security concepts, building foundational knowledge in healthcare IT security and patient data protection.</li>
         </ul>
       </div>
     </div>
@@ -780,8 +782,8 @@
         <h3>Dick's Sporting Goods</h3>
         <div class="role">Front End Cashier · Customer Service Specialist</div>
         <ul>
-          <li>Provided exceptional service to 50+ customers per weekend, leveraging data-driven strategies to improve satisfaction while streamlining product inventory management for faster product location and selection</li>
-          <li>Ensured accurate and efficient payments across multiple platforms using advanced transaction systems</li>
+          <li>Provided exceptional service to 50+ customers per weekend, leveraging data-driven strategies to improve satisfaction while streamlining product inventory management for faster product location and selection.</li>
+          <li>Ensured accurate and efficient payments across multiple platforms using advanced transaction systems.</li>
         </ul>
       </div>
     </div>
@@ -792,8 +794,8 @@
         <h3>Jersey Mike's Subs</h3>
         <div class="role">Cashier</div>
         <ul>
-          <li>Prepared customer orders and operated point-of-sale systems with speed and accuracy during peak service hours</li>
-          <li>Maintained reliable attendance and consistent performance over a two-year tenure while balancing full-time coursework</li>
+          <li>Prepared customer orders and operated point-of-sale systems with speed and accuracy during peak service hours.</li>
+          <li>Maintained reliable attendance and consistent performance over a two-year tenure while balancing full-time coursework.</li>
         </ul>
       </div>
     </div>
@@ -807,16 +809,18 @@
   </div>
 
   <div class="projects-grid">
+
+    <!-- ✅ UPDATED: Snippet -->
     <div class="project-card reveal">
       <div class="project-num">01</div>
       <h3>Snippet</h3>
-      <div class="project-tech">Senior Project · Full-Stack Web App</div>
+      <div class="project-tech">React · Vite · Tailwind CSS · Express · MongoDB</div>
       <ul>
-        <li>Collaborated with two classmates on a full-stack web application as our senior capstone project</li>
-        <li>Contributed to both front-end and back-end development within an agile team workflow</li>
-        <li>Built features for user-facing interactions and integrated data persistence on the backend</li>
+        <li>Led 3-person team to build a community-based communication platform with 28 reusable React components and 26 pages, solving the lack of accessible peer-learning tools on campus.</li>
+        <li>Implemented real-time video, audio, and messaging using WebRTC and Socket.IO, enabling low-latency peer-to-peer signaling and stable media stream handling for 50+ concurrent users.</li>
+        <li>Coordinated full-stack development, code reviews, and deployment via Vercel, reducing release time and ensuring a reproducible, scalable architecture.</li>
       </ul>
-      <a href="https://snippet-gp.vercel.app/resume" target="_blank" rel="noopener" class="project-link">View Live Site →</a>
+      <a href="https://snippet-gp.vercel.app" target="_blank" rel="noopener" class="project-link">View Live Site →</a>
     </div>
 
     <div class="project-card reveal">
@@ -824,11 +828,10 @@
       <h3>ShelfLife</h3>
       <div class="project-tech">Java · JavaFX · MySQL · May 2024</div>
       <ul>
-        <li>Engineered a full-stack Order Management System with JavaFX and MySQL for real-time order tracking, inventory updates, and purchase history — handling 100+ daily orders</li>
-        <li>Designed interactive interfaces with robust error handling and input validation, reducing processing errors by 40%</li>
-        <li>Optimized queries with foreign key constraints and a modular architecture, improving query response time by 30%</li>
+        <li>Engineered a full-stack Order Management System with JavaFX and MySQL for real-time order tracking, inventory updates, and purchase history — handling 100+ daily orders.</li>
+        <li>Designed interactive interfaces with robust error handling and input validation, reducing processing errors by 40%.</li>
+        <li>Optimized queries with foreign key constraints and a modular architecture, improving query response time by 30%.</li>
       </ul>
-      <!-- ShelfLife GitHub repo -->
       <a href="https://github.com/DhrumilPat/ShelfLife" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
     </div>
 
@@ -837,11 +840,10 @@
       <h3>Poker Game</h3>
       <div class="project-tech">Java · JavaFX · MySQL · JDBC · May 2023</div>
       <ul>
-        <li>Implemented advanced game mechanics with JavaFX for dynamic, interactive graphical interfaces</li>
-        <li>Designed a MySQL-based system to handle game data, player statistics, and historical records — supporting 5,000+ records</li>
-        <li>Used JDBC for seamless and secure database operations, maintaining 99.5% uptime</li>
+        <li>Implemented advanced game mechanics with JavaFX for dynamic, interactive graphical interfaces.</li>
+        <li>Designed a MySQL-based system to handle game data, player statistics, and historical records — supporting 5,000+ records.</li>
+        <li>Used JDBC for seamless and secure database operations, maintaining 99.5% uptime.</li>
       </ul>
-      <!-- Poker Game GitHub repo -->
       <a href="https://github.com/DhrumilPat/Poker-Game" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
     </div>
   </div>
@@ -923,9 +925,23 @@
       <h3>Databases &amp; Data Tools</h3>
       <div class="skill-tags">
         <span class="skill-tag">MySQL</span>
+        <span class="skill-tag">MongoDB</span>
         <span class="skill-tag">JDBC</span>
         <span class="skill-tag">JavaFX</span>
         <span class="skill-tag">Microsoft Excel</span>
+      </div>
+    </div>
+
+    <div class="skill-category reveal">
+      <div class="skill-category-label">Frontend & Backend</div>
+      <h3>Frameworks &amp; Libraries</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">Vite</span>
+        <span class="skill-tag">Tailwind CSS</span>
+        <span class="skill-tag">Express</span>
+        <span class="skill-tag">WebRTC</span>
+        <span class="skill-tag">Socket.IO</span>
       </div>
     </div>
 
